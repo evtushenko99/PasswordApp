@@ -47,6 +47,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mLength = MIN_LENGTH;
 
         mTextSeekBarString = new StringBuilder();
         mTextSeekBarString.append(PASSWORD_LENGTH);
