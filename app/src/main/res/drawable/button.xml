@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#a0a0a0"/>
+            <padding
+                android:bottom="@dimen/shape_padding"
+                android:left="@dimen/shape_padding"
+                android:right="@dimen/shape_padding"
+                android:top="@dimen/shape_padding"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true"
+        android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/colorAccent"/>
+            <stroke android:color="@color/colorPrimary" android:width="8dp"/>
+        </shape>
+        <padding
+            android:bottom="@dimen/shape_padding"
+            android:left="@dimen/shape_padding"
+            android:right="@dimen/shape_padding"
+            android:top="@dimen/shape_padding"/>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/colorPrimary"/>
+            <stroke android:color="@color/colorPrimary" android:width="4dp"/>
+        </shape>
+        <padding
+            android:bottom="@dimen/shape_padding"
+            android:left="@dimen/shape_padding"
+            android:right="@dimen/shape_padding"
+            android:top="@dimen/shape_padding"/>
+    </item>
+</selector>

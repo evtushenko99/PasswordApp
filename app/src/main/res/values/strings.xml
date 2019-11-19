@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Перевод пароля</string>
+    <string name="help_text">Здесь вы можете посмотреть свой пароль, созданный по методу "русское слово в английской раскладке"</string>
+    <string name="edit_text_auto_fill">Password</string>
+    <string name="clipboard_title">Пароль</string>
+    <plurals name="symbols_plurals">
+        <item quantity="one">%1$d символ</item>
+        <item quantity="few">%1$d символа</item>
+        <item quantity="many">%1$d символов</item>
+        <item quantity="other">%1$d символов</item>
+    </plurals>
+    <string-array name="russian">
+        <item>й</item>
+        <item>ц</item>
+        <item>у</item>
+        <item>к</item>
+        <item>е</item>
+        <item>н</item>
+        <item>г</item>
+        <item>ш</item>
+        <item>щ</item>
+        <item>з</item>
+        <item>ф</item>
+        <item>ы</item>
+        <item>в</item>
+        <item>а</item>
+        <item>п</item>
+        <item>р</item>
+        <item>о</item>
+        <item>л</item>
+        <item>д</item>
+        <item>я</item>
+        <item>ч</item>
+        <item>с</item>
+        <item>м</item>
+        <item>и</item>
+        <item>т</item>
+        <item>ь</item>
+    </string-array>
+    <string-array name="english">
+        <item>q</item>
+        <item>w</item>
+        <item>e</item>
+        <item>r</item>
+        <item>t</item>
+        <item>y</item>
+        <item>u</item>
+        <item>i</item>
+        <item>o</item>
+        <item>p</item>
+        <item>a</item>
+        <item>s</item>
+        <item>d</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>z</item>
+        <item>x</item>
+        <item>c</item>
+        <item>v</item>
+        <item>b</item>
+        <item>n</item>
+        <item>m</item>
+    </string-array>
+    <string name="quality_hint">(Качество)</string>
+    <string name="text_view_generate_help_text">Сгенерируйте новый пароль ему на замену</string>
+    <string name="check_box_uppercase">Заглавная буквы</string>
+    <string name="check_box_numbers">Цифры</string>
+    <string name="check_box_special_characters">Специсимволы</string>
+    <string name="button_generated_password">Генерировать</string>
+    <string name="helper_hint_russian_password">(русский пароль)</string>
+    <string-array name="qualities">
+        <item>@string/quality_hint</item>
+        <item>Ужасно</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>Отличный</item>
+    </string-array>
+</resources>

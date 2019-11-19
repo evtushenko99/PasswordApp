@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android">
+    <level-list>
+        <item android:maxLevel="3999">
+            <shape>
+                <solid android:color="#F44336"/>
+            </shape>
+        </item>
+        <item android:minLevel="4000" android:maxLevel="7999">
+            <shape>
+                <solid android:color="#FFC107"/>
+            </shape>
+        </item>
+        <item android:minLevel="8000" android:maxLevel="10000">
+            <shape>
+                <solid android:color="#4CAF50"/>
+            </shape>
+        </item>
+    </level-list>
+</clip>

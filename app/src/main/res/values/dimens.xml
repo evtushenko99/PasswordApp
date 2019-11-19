@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_padding">12dp</dimen>
+    <dimen name="margin_result">12dp</dimen>
+    <dimen name="copy_image_button_1">8dp</dimen>
+    <dimen name="result_stroke_radius">8dp</dimen>
+    <dimen name="result_stroke_width">4dp</dimen>
+    <dimen name="indicator_width">128dp</dimen>
+    <dimen name="indicator_height">32dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="shape_padding">16dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+</resources>
