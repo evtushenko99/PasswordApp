@@ -3,11 +3,12 @@
     <string name="help_text">Здесь вы можете посмотреть свой пароль, созданный по методу "русское слово в английской раскладке"</string>
     <string name="edit_text_auto_fill">Password</string>
     <string name="clipboard_title">Пароль</string>
+    <string name="length_format">Длина: %1$d + %2$d %3$s = %4$d %5$s</string>
     <plurals name="symbols_plurals">
-        <item quantity="one">%1$d символ</item>
-        <item quantity="few">%1$d символа</item>
-        <item quantity="many">%1$d символов</item>
-        <item quantity="other">%1$d символов</item>
+        <item quantity="one">символ</item>
+        <item quantity="few">символа</item>
+        <item quantity="many">символов</item>
+        <item quantity="other">символов</item>
     </plurals>
     <string-array name="russian">
         <item>й</item>

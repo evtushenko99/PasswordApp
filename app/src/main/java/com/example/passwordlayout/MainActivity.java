@@ -50,9 +50,8 @@ public class MainActivity extends Activity {
         mLength = MIN_LENGTH;
 
         mTextSeekBarString = new StringBuilder();
-        mTextSeekBarString.append(PASSWORD_LENGTH);
 
-        mAdditions = new ArrayList<>();
+        mAdditions = new ArrayList<>(4);
         mAdditions.add(0);
 
         mHelper = new PasswordsHelper(
@@ -83,14 +82,9 @@ public class MainActivity extends Activity {
         mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                mTextSeekBarString.delete(PASSWORD_LENGTH.length(), mTextSeekBarString.length());
-                if (i > 0) {
-                    mTextSeekBarString.append(" + ");
-                    mTextSeekBarString.append(getResources().getQuantityString(R.plurals.symbols_plurals, i, i));
-                    mTextSeekBarString.append(" = ");
-                    mTextSeekBarString.append(getResources().getQuantityString(R.plurals.symbols_plurals, MIN_LENGTH + i, MIN_LENGTH + i));
-                }
-
+                mTextSeekBarString.delete(0, mTextSeekBarString.length());
+                mTextSeekBarString.append(getResources().getString(R.string.length_format, MIN_LENGTH, i,
+                        getResources().getQuantityString(R.plurals.symbols_plurals, i), i, getResources().getQuantityString(R.plurals.symbols_plurals, MIN_LENGTH + i)));
                 mSeekBarHelperTextView.setText(mTextSeekBarString.toString());
                 mLength = MIN_LENGTH;
             }
@@ -143,6 +137,7 @@ public class MainActivity extends Activity {
                 int mGetQuality = mHelper.getQuality(charSequence);
                 mQuality.setImageLevel((mGetQuality * 1000));
                 mQualityText.setText(getResources().getStringArray(R.array.qualities)[mGetQuality]);
+
             }
 
             @Override
@@ -153,19 +148,25 @@ public class MainActivity extends Activity {
         mCheckBoxUpperCase.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                mAdditions.add(1);
+                if (mAdditions.indexOf(1) == -1) {
+                    mAdditions.add(1);
+                }
             }
         });
         mCheckBoxNumbers.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                mAdditions.add(2);
+                if (mAdditions.indexOf(2) == -1) {
+                    mAdditions.add(2);
+                }
             }
         });
         mCheckBoxSpecialCharacters.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                mAdditions.add(3);
+                if (mAdditions.indexOf(3) == -1) {
+                    mAdditions.add(3);
+                }
             }
 
         });

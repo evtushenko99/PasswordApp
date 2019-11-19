@@ -6,7 +6,6 @@ import java.util.Random;
 public class PasswordsHelper {
     private String[] mRussians;
     private String[] mLatins;
-    private static final String SpecialCharacters = "!@#$%&*()_+-=[]|,./?><";
 
     public PasswordsHelper(String[] russians, String[] latins) {
         if (russians.length != latins.length) {
