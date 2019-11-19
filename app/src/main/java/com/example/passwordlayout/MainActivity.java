@@ -84,7 +84,7 @@ public class MainActivity extends Activity {
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 mTextSeekBarString.delete(0, mTextSeekBarString.length());
                 mTextSeekBarString.append(getResources().getString(R.string.length_format, MIN_LENGTH, i,
-                        getResources().getQuantityString(R.plurals.symbols_plurals, i), i, getResources().getQuantityString(R.plurals.symbols_plurals, MIN_LENGTH + i)));
+                        getResources().getQuantityString(R.plurals.symbols_plurals, i), MIN_LENGTH + i, getResources().getQuantityString(R.plurals.symbols_plurals, MIN_LENGTH + i)));
                 mSeekBarHelperTextView.setText(mTextSeekBarString.toString());
                 mLength = MIN_LENGTH;
             }

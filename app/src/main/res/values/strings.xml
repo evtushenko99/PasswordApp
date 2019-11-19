@@ -10,6 +10,26 @@
         <item quantity="many">символов</item>
         <item quantity="other">символов</item>
     </plurals>
+    <string name="quality_hint">(Качество)</string>
+    <string name="text_view_generate_help_text">Сгенерируйте новый пароль ему на замену</string>
+    <string name="check_box_uppercase">Заглавная буквы</string>
+    <string name="check_box_numbers">Цифры</string>
+    <string name="check_box_special_characters">Специсимволы</string>
+    <string name="button_generated_password">Генерировать</string>
+    <string name="helper_hint_russian_password">(русский пароль)</string>
+    <string-array name="qualities">
+        <item>@string/quality_hint</item>
+        <item>Ужасно</item>
+        <item></item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>Отличный</item>
+    </string-array>
     <string-array name="russian">
         <item>й</item>
         <item>ц</item>
@@ -66,24 +86,5 @@
         <item>n</item>
         <item>m</item>
     </string-array>
-    <string name="quality_hint">(Качество)</string>
-    <string name="text_view_generate_help_text">Сгенерируйте новый пароль ему на замену</string>
-    <string name="check_box_uppercase">Заглавная буквы</string>
-    <string name="check_box_numbers">Цифры</string>
-    <string name="check_box_special_characters">Специсимволы</string>
-    <string name="button_generated_password">Генерировать</string>
-    <string name="helper_hint_russian_password">(русский пароль)</string>
-    <string-array name="qualities">
-        <item>@string/quality_hint</item>
-        <item>Ужасно</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>Отличный</item>
-    </string-array>
+
 </resources>
